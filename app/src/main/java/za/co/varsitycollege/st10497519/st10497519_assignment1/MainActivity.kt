@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
                 listOf("morning", "mid-morning", "afternoon", "mid-afternoon", "dinner")
 
             if (timeOfDay.isEmpty() || !validTimesOfDay.contains(timeOfDay)) {
-                // Show AlertDialog if input is empty
+                // Show AlertDialog if input is empty or wrong input entered
                 val builder = AlertDialog.Builder(this)
                 builder.setTitle("Input Required")
                 builder.setMessage("Please enter a valid time of day (e.g., morning, mid-morning, afternoon, mid-afternoon, dinner)")
@@ -69,6 +69,14 @@ class MainActivity : AppCompatActivity() {
                 else -> {
                     mealSuggestion = "Invalid time of day entered. Try again!"
                 }
+
+            }
+
+            suggestionText.text = mealSuggestion
+
+            resetButton.setOnClickListener {
+                timeInput.text.clear()
+                suggestionText.text = "Meal suggestion will appear here"
 
             }
         }
