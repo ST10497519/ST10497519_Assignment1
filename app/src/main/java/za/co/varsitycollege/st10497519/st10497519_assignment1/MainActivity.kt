@@ -16,10 +16,10 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
-        var timeInput: EditText
-        var suggestButton: Button
-        var suggestionText: TextView
-        var resetButton: Button
+        val timeInput: EditText
+        val suggestButton: Button
+        val suggestionText: TextView
+        val resetButton: Button
 
         timeInput = findViewById(R.id.editTextTime)
         suggestButton = findViewById(R.id.suggestbutton)
@@ -48,6 +48,29 @@ class MainActivity : AppCompatActivity() {
                 return@setOnClickListener
             }
 
+            // Meal suggestion based on time of day
+            var mealSuggestion = ""
+            when {
+                timeOfDay == "morning" -> {
+                    mealSuggestion = "Some egg and toast will be good"
+                }
+                timeOfDay == "mid-morning" -> {
+                    mealSuggestion = "Enjoy a nice smoothie"
+                }
+                timeOfDay == "afternoon" -> {
+                    mealSuggestion = "An easy sandwich or salad"
+                }
+                timeOfDay == "mid-afternoon" -> {
+                    mealSuggestion = "Fruit or nuts/pretzels"
+                }
+                timeOfDay == "dinner" -> {
+                    mealSuggestion = "Chicken and rice"
+                }
+                else -> {
+                    mealSuggestion = "Invalid time of day entered. Try again!"
+                }
+
+            }
         }
     }
 }
