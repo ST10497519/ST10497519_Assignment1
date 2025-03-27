@@ -32,13 +32,13 @@ class MainActivity : AppCompatActivity() {
             val timeOfDay = timeInput.text.toString().trim().lowercase()
             // Valid times of the day able to be entered
             val validTimesOfDay =
-                listOf("morning", "mid-morning", "afternoon", "mid-afternoon", "dinner")
+                listOf("morning", "mid-morning", "afternoon", "mid-afternoon", "dinner", "snack")
 
             if (timeOfDay.isEmpty() || !validTimesOfDay.contains(timeOfDay)) {
                 // Show AlertDialog if input is empty or wrong input entered
                 val builder = AlertDialog.Builder(this)
                 builder.setTitle("Input Required")
-                builder.setMessage("Please enter a valid time of day (e.g., morning, mid-morning, afternoon, mid-afternoon, dinner)")
+                builder.setMessage("Please enter a valid time of day (e.g., morning, mid-morning, afternoon, mid-afternoon, dinner, snack)")
                 builder.setPositiveButton("OK") { dialog, _ ->
                     dialog.dismiss() // Dismiss dialog when OK is clicked
                 }
@@ -65,6 +65,9 @@ class MainActivity : AppCompatActivity() {
                 }
                 timeOfDay == "dinner" -> {
                     mealSuggestion = "Chicken and rice"
+                }
+                timeOfDay == "snack" -> {
+                    mealSuggestion = "Peppermint Tart"
                 }
                 else -> {
                     mealSuggestion = "Invalid time of day entered. Try again!"
