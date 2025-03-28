@@ -73,4 +73,4 @@ App is very user-friendly interface that is organised and has hints to show the 
 #### GitHub
 Used GitHub to make sure everything worked the same and the code was not being broken after each commit and push.
 #### GitHub Actions
-Used GitHub Actions to build and test my code and to release apk
+Used GitHub Actions to build and test my code and to release apk, found in [.github/workflows/apptest.yml](https://github.com/ST10497519/ST10497519_Assignment1/tree/master/.github/workflows)
