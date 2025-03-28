@@ -72,7 +72,7 @@ class MainActivity : AppCompatActivity() {
                 else -> {
                     mealSuggestion = "Invalid time of day entered. Try again!"
                 }
-
+                // testing github actions
             }
 
             suggestionText.text = mealSuggestion
