@@ -72,11 +72,12 @@ class MainActivity : AppCompatActivity() {
                 else -> {
                     mealSuggestion = "Invalid time of day entered. Try again!"
                 }
-                // testing github actions
+
             }
 
             suggestionText.text = mealSuggestion
 
+            // reset button to reset all text when pressed
             resetButton.setOnClickListener {
                 timeInput.text.clear()
                 suggestionText.text = "Meal suggestion will appear here"
