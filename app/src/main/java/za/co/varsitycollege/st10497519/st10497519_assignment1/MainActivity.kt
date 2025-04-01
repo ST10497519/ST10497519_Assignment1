@@ -77,7 +77,7 @@ class MainActivity : AppCompatActivity() {
 
             suggestionText.text = mealSuggestion
 
-            // To reset all text when pressedt button
+            // To reset all text when pressed button
             resetButton.setOnClickListener {
                 timeInput.text.clear()
                 suggestionText.text = "Meal suggestion will appear here"
