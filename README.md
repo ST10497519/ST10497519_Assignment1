@@ -24,8 +24,7 @@ The input format is specific and should have no spaces and can have uppercase or
 
 ## Screenshot
 
-![App screenshot](https://github.com/user-attachments/assets/e11b189c-a13f-4140-9468-8fdbbad73dbc)
-
+![App Screenshot](https://github.com/user-attachments/assets/fcc1815a-c9e8-4610-b67a-df3566741208)
 
 ### Requirements
 
