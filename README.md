@@ -62,3 +62,7 @@ The input format is specific and should have no spaces and can have uppercase or
 
 ## YouTube Video
 https://youtube.com/shorts/6mBRS-h59lE?feature=share
+
+## Reference
+
+Used https://github.com/marketplace/actions/automated-build-android-app-with-github-action for GitHub Actions code
